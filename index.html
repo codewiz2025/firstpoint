@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FirstPoint Enterprises</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First Point Enterprises: original, SON certified electrical lighting at affordable prices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- SHORTCUT ICON (browser tab icon): save your logo as "logo.png" in the same folder as this file -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar" id="top">
+        <a href="#home" class="brand" aria-label="First Point home">
+            <!-- LOGO PLACEHOLDER: save your logo as "logo.png" next to this file and it will appear here.
+                 Until then a dashed "LOGO" box is shown. -->
+            <img src="logo.png" alt="FirstPoint logo" class="logo-img" id="logoImg">
+            <span class="logo-placeholder" id="logoPlaceholder">LOGO</span>
+            <span class="brand-text">FirstPoint<small>Enterprises</small></span>
+        </a>
+
+        <!-- Laptop / desktop menu (the hamburger below is for phones and tablets) -->
+        <nav class="desktop-nav" aria-label="Main menu">
+            <a href="#home">Home</a>
+            <a href="#about" data-soon="About">About</a>
+            <a href="#contact" data-soon="Contact">Contact</a>
+            <a href="#products" class="nav-cta">Items / Products</a>
+        </nav>
+
+        <button class="hamburger" id="openMenu" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- SLIDE-IN MENU -->
+    <div class="backdrop" id="backdrop"></div>
+    <nav class="drawer" id="drawer" aria-label="Main menu" aria-hidden="true">
+        <div class="drawer-head">
+            <span class="drawer-title">Menu</span>
+            <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+        </div>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link soon" data-soon="About">About <em>Soon</em></a>
+        <a href="#contact" class="nav-link soon" data-soon="Contact">Contact <em>Soon</em></a>
+        <a href="#products" class="nav-link">Items / Products</a>
+        <p class="drawer-foot">Save money. Choose original.<br>Choose FirstPoint.</p>
+    </nav>
+
+    <main>
+        <!-- HOME / WELCOME -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <span class="pill">⚡ Welcome to FirstPoint</span>
+                <h1>Light up your space with <span class="gold">original</span> quality.</h1>
+                <p class="lead">Affordable, top-quality electrical lighting. Walk into the nearest shop near you and grab FirstPoint products at discounted prices.</p>
+                <div class="cta">
+                    <a href="#products" class="btn">Browse Products</a>
+                    <a href="#about" class="btn btn-ghost soon" data-soon="About">Learn More</a>
+                </div>
+                <ul class="trust">
+                    <li>✔ SON Certified</li>
+                    <li>✔ 100% Quality Assured</li>
+                    <li>✔ Most Trusted Brand</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual">
+                <div class="shot s1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65wAQlfW_XZv5cgk5tFmrl4YzKDxBlxlAzJx7DQLD2Q&s=10" alt="Light bulb"><span>Bulbs</span></div>
+                <div class="shot s2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vmk8JDsIOgyNO6cLyFKk3o-KEge0INfFrR3RzJuNdg&s=10" alt="Chandelier"><span>Chandeliers</span></div>
+                <div class="shot s3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8jX_zUH3jphkStmEFLFGy6Es7PvD6gyLLnHgHKd3Yg&s=10" alt="Fan"><span>Fans</span></div>
+                <div class="shot s4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tBqbGNtyUQaBWKFh4DZVG4dhwujG0o3C7PtvgCDjIw&s=10" alt="Light switch"><span>Switches</span></div>
+                <div class="float-badge">🏅<strong>100%</strong><small>Quality Assured</small></div>
+            </div>
+        </section>
+
+        <!-- QUICK CATEGORIES -->
+        <section class="quick">
+            <button class="quick-item" data-jump="lights"><span>💡</span>Lights</button>
+            <button class="quick-item" data-jump="fans"><span>🌀</span>Fans</button>
+            <button class="quick-item" data-jump="chandeliers"><span>🏮</span>Chandeliers</button>
+            <button class="quick-item" data-jump="switches"><span>🔌</span>Switches</button>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products" class="section">
+            <div class="section-head">
+                <h2>Our Collection</h2>
+                <p>Pick a category to see what we sell.</p>
+            </div>
+
+            <div class="tabs" role="tablist" id="tabs">
+                <button class="tab active" data-filter="all">All</button>
+                <button class="tab" data-filter="lights">Lights</button>
+                <button class="tab" data-filter="fans">Fans</button>
+                <button class="tab" data-filter="chandeliers">Chandeliers</button>
+                <button class="tab" data-filter="switches">Switches</button>
+            </div>
+
+            <div id="collection">
+            <div class="group" id="group-lights" data-group="lights">
+                <div class="group-head">
+                    <span class="group-icon">💡</span>
+                    <div><h3>Lights</h3><p>Bulbs, rope lights, panel lights, spotlights, tube lights and more.</p></div>
+                    <span class="count">8 items</span>
+                </div>
+                <div class="grid">
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65wAQlfW_XZv5cgk5tFmrl4YzKDxBlxlAzJx7DQLD2Q&s=10" alt="LED Bulb" loading="lazy"></div><div class="info"><span class="chip">Light Bulb</span><h3>LED Bulb</h3><p>Energy-saving bulbs for every room.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnKBdF3McO1FiRhTR7d-Gl6tTIIb5qmd2nHKPtr83pVw&s=10" alt="Rechargeable Bulb" loading="lazy"></div><div class="info"><span class="chip">Light Bulb</span><h3>Rechargeable Bulb</h3><p>Keeps the light on when power goes off.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3FXABDtWk9uMzKKw2QKCd_iV7stWB5BAkC-AGaXlp5A&s=10" alt="LED Rope Light" loading="lazy"></div><div class="info"><span class="chip">Light Bulb</span><h3>LED Rope Light</h3><p>Flexible strip for ceilings and décor.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazAaGvK7PYHLc4HbaKSk6dw9uzlQkqWyQE_iwl_4sLw&s=10" alt="Panel Light" loading="lazy"></div><div class="info"><span class="chip">Other Lighting</span><h3>Panel Light</h3><p>Slim round and square ceiling panels.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazAaGvK7PYHLc4HbaKSk6dw9uzlQkqWyQE_iwl_4sLw&s=10" alt="Spotlight" loading="lazy"></div><div class="info"><span class="chip">Other Lighting</span><h3>Spotlight</h3><p>Single and double-head spot fittings.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazAaGvK7PYHLc4HbaKSk6dw9uzlQkqWyQE_iwl_4sLw&s=10" alt="Tube Light" loading="lazy"></div><div class="info"><span class="chip">Other Lighting</span><h3>Tube Light</h3><p>Bright, even lighting for large areas.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazAaGvK7PYHLc4HbaKSk6dw9uzlQkqWyQE_iwl_4sLw&s=10" alt="Bulkhead Light" loading="lazy"></div><div class="info"><span class="chip">Other Lighting</span><h3>Bulkhead Light</h3><p>Oval and round outdoor-ready fittings.</p></div></article>
+                    <article class="card" data-cat="lights"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazAaGvK7PYHLc4HbaKSk6dw9uzlQkqWyQE_iwl_4sLw&s=10" alt="Flood Light" loading="lazy"></div><div class="info"><span class="chip">Other Lighting</span><h3>Flood Light</h3><p>Powerful lighting for compounds and signs.</p></div></article>
+                </div>
+            </div>
+
+            <div class="group" id="group-fans" data-group="fans">
+                <div class="group-head">
+                    <span class="group-icon">🌀</span>
+                    <div><h3>Fans</h3><p>Ceiling, standing and wall fans.</p></div>
+                    <span class="count">3 items</span>
+                </div>
+                <div class="grid">
+                    <article class="card" data-cat="fans"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8jX_zUH3jphkStmEFLFGy6Es7PvD6gyLLnHgHKd3Yg&s=10" alt="Ceiling Fan" loading="lazy"></div><div class="info"><span class="chip">Fan</span><h3>Ceiling Fan</h3><p>Quiet, durable and efficient.</p></div></article>
+                    <article class="card" data-cat="fans"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8jX_zUH3jphkStmEFLFGy6Es7PvD6gyLLnHgHKd3Yg&s=10" alt="Standing Fan" loading="lazy"></div><div class="info"><span class="chip">Fan</span><h3>Standing Fan</h3><p>Adjustable cooling for home and office.</p></div></article>
+                    <article class="card" data-cat="fans"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8jX_zUH3jphkStmEFLFGy6Es7PvD6gyLLnHgHKd3Yg&s=10" alt="Wall Fan" loading="lazy"></div><div class="info"><span class="chip">Fan</span><h3>Wall Fan</h3><p>Space-saving airflow.</p></div></article>
+                </div>
+            </div>
+
+            <div class="group" id="group-chandeliers" data-group="chandeliers">
+                <div class="group-head">
+                    <span class="group-icon">🏮</span>
+                    <div><h3>Chandeliers</h3><p>Statement and pendant lighting for your home.</p></div>
+                    <span class="count">3 items</span>
+                </div>
+                <div class="grid">
+                    <article class="card" data-cat="chandeliers"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vmk8JDsIOgyNO6cLyFKk3o-KEge0INfFrR3RzJuNdg&s=10" alt="Crystal Chandelier" loading="lazy"></div><div class="info"><span class="chip">Chandelier</span><h3>Crystal Chandelier</h3><p>A statement piece for living rooms.</p></div></article>
+                    <article class="card" data-cat="chandeliers"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vmk8JDsIOgyNO6cLyFKk3o-KEge0INfFrR3RzJuNdg&s=10" alt="Modern Chandelier" loading="lazy"></div><div class="info"><span class="chip">Chandelier</span><h3>Modern Chandelier</h3><p>Elegant designs for dining areas.</p></div></article>
+                    <article class="card" data-cat="chandeliers"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vmk8JDsIOgyNO6cLyFKk3o-KEge0INfFrR3RzJuNdg&s=10" alt="Pendant Light" loading="lazy"></div><div class="info"><span class="chip">Chandelier</span><h3>Pendant Light</h3><p>Hanging lights for stylish spaces.</p></div></article>
+                </div>
+            </div>
+
+            <div class="group" id="group-switches" data-group="switches">
+                <div class="group-head">
+                    <span class="group-icon">🔌</span>
+                    <div><h3>Switches</h3><p>Wall switches, sockets and dimmers.</p></div>
+                    <span class="count">3 items</span>
+                </div>
+                <div class="grid">
+                    <article class="card" data-cat="switches"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tBqbGNtyUQaBWKFh4DZVG4dhwujG0o3C7PtvgCDjIw&s=10" alt="Wall Switch" loading="lazy"></div><div class="info"><span class="chip">Switch</span><h3>Wall Switch</h3><p>1-gang, 2-gang and more.</p></div></article>
+                    <article class="card" data-cat="switches"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tBqbGNtyUQaBWKFh4DZVG4dhwujG0o3C7PtvgCDjIw&s=10" alt="Socket Outlet" loading="lazy"></div><div class="info"><span class="chip">Switch</span><h3>Socket Outlet</h3><p>Safe, sturdy power sockets.</p></div></article>
+                    <article class="card" data-cat="switches"><div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tBqbGNtyUQaBWKFh4DZVG4dhwujG0o3C7PtvgCDjIw&s=10" alt="Dimmer and Control" loading="lazy"></div><div class="info"><span class="chip">Switch</span><h3>Dimmer &amp; Control</h3><p>Set the perfect brightness.</p></div></article>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION BAND -->
+        <section class="band">
+            <h2>Save money. Choose original. Choose FirstPoint.</h2>
+            <p>Affordable prices for top-quality electrical lighting, when it comes to lighting!</p>
+            <a href="#products" class="btn">Shop the Collection</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>First Point Enterprises</strong> &middot; Original Product. Affordable Prices.</p>
+        <p>&copy; 2026 First Point Enterprises. All rights reserved.</p>
+    </footer>
+
+    <!-- COMING SOON POPUP -->
+    <div class="modal" id="soonModal" role="dialog" aria-modal="true" aria-labelledby="soonTitle" aria-hidden="true">
+        <div class="modal-box">
+            <div class="modal-icon">🚧</div>
+            <h3 id="soonTitle">Coming Soon</h3>
+            <p>The <strong id="soonName">page</strong> page is on its way. Please check back shortly.</p>
+            <button class="btn" id="soonClose">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var drawer = document.getElementById('drawer');
+            var backdrop = document.getElementById('backdrop');
+            var burger = document.getElementById('openMenu');
+            var modal = document.getElementById('soonModal');
+            var soonName = document.getElementById('soonName');
+
+            // Logo: show the image if logo.png exists, otherwise show the LOGO placeholder box
+            var logoImg = document.getElementById('logoImg');
+            var logoBox = document.getElementById('logoPlaceholder');
+            function logoOk() { logoBox.style.display = 'none'; logoImg.style.display = 'block'; }
+            function logoMissing() { logoImg.style.display = 'none'; logoBox.style.display = 'flex'; }
+            logoImg.addEventListener('load', logoOk);
+            logoImg.addEventListener('error', logoMissing);
+            if (logoImg.complete) { logoImg.naturalWidth > 0 ? logoOk() : logoMissing(); }
+
+            function openMenu() {
+                drawer.classList.add('open'); backdrop.classList.add('show');
+                drawer.setAttribute('aria-hidden', 'false');
+                burger.setAttribute('aria-expanded', 'true');
+                document.body.classList.add('lock');
+            }
+            function closeMenu() {
+                drawer.classList.remove('open'); backdrop.classList.remove('show');
+                drawer.setAttribute('aria-hidden', 'true');
+                burger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('lock');
+            }
+            function openSoon(name) {
+                soonName.textContent = name;
+                modal.classList.add('show'); modal.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('lock');
+            }
+            function closeSoon() {
+                modal.classList.remove('show'); modal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('lock');
+                if (history.replaceState) history.replaceState(null, '', location.pathname + '#home');
+            }
+
+            burger.addEventListener('click', openMenu);
+            document.getElementById('closeMenu').addEventListener('click', closeMenu);
+            backdrop.addEventListener('click', closeMenu);
+            document.getElementById('soonClose').addEventListener('click', function () {
+                closeSoon();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            modal.addEventListener('click', function (e) { if (e.target === modal) closeSoon(); });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') { closeMenu(); closeSoon(); }
+            });
+
+            // Menu links: close the menu; About / Contact show "Coming Soon"
+            document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    var soon = a.getAttribute('data-soon');
+                    if (a.closest('#drawer')) closeMenu();
+                    if (soon) { e.preventDefault(); openSoon(soon); }
+                });
+            });
+
+            // Product category filter (shows one group, or all four)
+            var tabs = document.querySelectorAll('.tab');
+            var groups = document.querySelectorAll('.group');
+            function filter(cat) {
+                tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.filter === cat); });
+                groups.forEach(function (g) {
+                    g.classList.toggle('hide', cat !== 'all' && g.dataset.group !== cat);
+                });
+            }
+            tabs.forEach(function (t) { t.addEventListener('click', function () { filter(t.dataset.filter); }); });
+            document.querySelectorAll('[data-jump]').forEach(function (b) {
+                b.addEventListener('click', function () {
+                    filter('all');
+                    document.getElementById('group-' + b.dataset.jump).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
